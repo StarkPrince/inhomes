@@ -67,17 +67,17 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'leonidas.wsgi.application'
+WSGI_APPLICATION = 'leonidas.wsgi.app'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('DATABASE_NAME'),
-        'USER': os.getenv('DATABASE_USER'),
-        'PASSWORD': os.getenv('DATABASE_PASSWORD'),
-        'HOST': os.getenv('DATABASE_HOST'),
+        'NAME': os.getenv('PGDATABASE'),
+        'USER': os.getenv('PGUSER'),
+        'PASSWORD': os.getenv('PGPASSWORD'),
+        # 'HOST': os.getenv('PGHOST'),
         'PORT': os.getenv('DATABASE_PORT'),
     }
 }
