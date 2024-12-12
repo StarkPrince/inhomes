@@ -1,1 +1,1 @@
-gunicorn leonidas.wsgi:application
+gunicorn leonidas.wsgi:app
