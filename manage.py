@@ -1,4 +1,5 @@
 #manage.py
+from leonidas.wsgi import application as app 
 
 import os
 import sys
