@@ -127,3 +127,4 @@ EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 EMAIL_USE_TLS = True
 NPM_BIN_PATH = "C:/Program Files/nodejs/npm.cmd"
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+
