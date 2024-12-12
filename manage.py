@@ -1,10 +1,10 @@
 #manage.py
-from leonidas.wsgi import application as app 
+from leonidas.wsgi import app 
 from django.core.wsgi import get_wsgi_application
 import os
 import sys
 
-application = get_wsgi_application()
+app = get_wsgi_application()
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'leonidas.settings')
     try:

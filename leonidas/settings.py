@@ -113,8 +113,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'leonidas/static')
 ]
+MEDIA_URL = 'https://noc-profileimages.s3.us-east-2.amazonaws.com/data/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
 
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'
